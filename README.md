@@ -1,1 +1,3 @@
 # NeRO
+
+Code will be releasing soon...
