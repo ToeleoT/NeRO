@@ -111,7 +111,7 @@ For some other hyperparameters for better network performance, you can edit the 
 
 ## Acknowledgements
 
-Thanks [nerf](https://github.com/bmild/nerf), [nerf-pytorch](https://github.com/yenchenlin/nerf-pytorch) and [semantic_nerf](https://github.com/Harry-Zhi/semantic_nerf) for providing nice and inspiring implementations of NeRF. Thanks [RoME](https://github.com/DRosemei/RoMe) for providing a great script for extracting semantic labels.
+Thanks [nerf](https://github.com/bmild/nerf), [nerf-pytorch](https://github.com/yenchenlin/nerf-pytorch) and [semantic_nerf](https://github.com/Harry-Zhi/semantic_nerf) for providing nice and inspiring implementations of dataset processing and network design. Thanks [RoME](https://github.com/DRosemei/RoMe) for providing a great script for extracting semantic labels.
 
 ## Citation
 
