@@ -31,7 +31,7 @@ We mainly use the [Kitti odometry dataset](https://www.cvlibs.net/datasets/kitti
 
 ## Prepare for Datasets
 
-Firstly, we use the [RoME](https://github.com/DRosemei/RoMe) scripts located at RoME/scripts/mask2former_infer/infer.sh to gain the semantic labels. Then, we use the code below to extract the train and semantic images, which only contain the road information.
+Firstly, we use the [RoME](https://github.com/DRosemei/RoMe) scripts located at ***<u>RoME/scripts/mask2former_infer/infer.sh</u>*** to gain the semantic labels. Then, we use the code below to extract the train and semantic images, which only contain the road information.
 
 ```
 python extract_road.py --img_dir image_direction --sem_dir semantic_direction
