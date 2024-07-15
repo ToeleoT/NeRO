@@ -1,0 +1,9 @@
+torch==2.0.0
+torchvision==0.15.0
+imageio
+imageio-ffmpeg
+matplotlib
+scikit-image
+scikit-learn
+tqdm
+opencv-python
