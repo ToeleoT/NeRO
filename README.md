@@ -2,7 +2,7 @@
 
 ### [Paper](https://arxiv.org/abs/2405.10554)
 
-<img src='imgs/road'/>
+![image](https://github.com/ToeleoT/NeRO/blob/main/imgs/road.png)
 
 This project is the implementation of an MLP-based road surface reconstruction method.
 
