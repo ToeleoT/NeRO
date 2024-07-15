@@ -14,8 +14,8 @@ We run this code using Python 3.8, Pytorch 2.0.0, and CUDA 11.8.
 
 Main Python dependencies are listed below:
 
-- Python >=3.8
-- torch>=2.0.0 
+- Python >= 3.8
+- torch >= 2.0.0 
 
 ## Installation
 
