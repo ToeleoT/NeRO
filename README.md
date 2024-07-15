@@ -40,7 +40,7 @@ python extract_road.py --img_dir image_direction --sem_dir semantic_direction
 After that, the code extracts the intrinsics from Kitti datasets.
 
 ```
-extract_intrinsics.py
+python extract_intrinsics.py
 ```
 
 Now, just put the training color images in the folder **train** and all the semantic labels in the folder **semantic**, and use the pose file from Kitti like "00.txt". 
