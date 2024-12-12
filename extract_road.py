@@ -17,12 +17,12 @@ args = parser.parse_args()
 all_imge_path = []
 for img in os.listdir(args.img_dir):
     all_imge_path.append(args.img_dir + img)
-all_imge_path = np.sort(all_sem_path)
+all_imge_path = np.sort(all_imge_path)
 
 all_sem_path = []
 for img in os.listdir(args.sem_dir):
     all_sem_path.append(args.sem_dir + img)
-all_sem_path = np.sort(all_imge_path)
+all_sem_path = np.sort(all_sem_path)
 
 if not os.path.exists(args.img_save_file):
     os.makedirs(args.img_save_file)
