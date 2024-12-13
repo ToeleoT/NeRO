@@ -100,7 +100,7 @@ elif args.data_type == 'sfm_sparse':
             min_val_in.append(c - 0.01)
             
 elif args.data_type == 'camera':
-    points_create_camera = camera([5,20,-10,10])
+    points_create_camera = points_range('camera')
     max_val_in_c,min_val_in_c = points_create_camera.get_min_max()
 
 
