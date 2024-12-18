@@ -59,6 +59,7 @@ if args.data_type == 'lidar':
             min_val_in.append(l - 0.01)
         else:
             min_val_in.append(c - 0.01)
+    point_path = np.sort(glob.glob(os.path.join(scene_dir,'lidar','*.npy')))
             
 elif args.data_type == 'sfm_dense':
     points_create_camera = points_range('camera')
@@ -79,6 +80,7 @@ elif args.data_type == 'sfm_dense':
             min_val_in.append(l - 0.01)
         else:
             min_val_in.append(c - 0.01)
+    point_path = np.sort(glob.glob(os.path.join(scene_dir,'sfm_dense','*.npy')))
 elif args.data_type == 'sfm_sparse':
     points_create_camera = points_range('camera')
     max_val_in_c,min_val_in_c = points_create_camera.get_min_max()
@@ -98,6 +100,7 @@ elif args.data_type == 'sfm_sparse':
             min_val_in.append(l - 0.01)
         else:
             min_val_in.append(c - 0.01)
+    point_path = np.sort(glob.glob(os.path.join(scene_dir,'sfm_sparse','*.npy')))
             
 elif args.data_type == 'camera':
     points_create_camera = points_range('camera')
@@ -110,6 +113,7 @@ elif args.data_type == 'camera':
     min_val_in = []
     for c in min_val_in_c:
         min_val_in.append(c - 0.01)
+    point_path = np.sort(glob.glob(os.path.join(scene_dir,'camera_offset','*.npy')))
 
 sem = args.sem
 
@@ -147,7 +151,7 @@ SmoothL1Loss = torch.nn.SmoothL1Loss()
 wgt_sem_loss = float(4e-2)
 
 
-point_path = np.sort(glob.glob(os.path.join(scene_dir,'lidar','*.npy')))
+
 point_path_grid = np.sort(glob.glob(os.path.join(scene_dir,'camera_offset','*.npy')))
 length = len(point_path_grid)
 def train(point_path,point_path_grid,global_step,length,img_h,img_w):
